@@ -27,27 +27,32 @@ console.log( greetingWords[1] + ', ' + prefixes[0] + ' name is ' + name1  );
 
 function greeting(name, gender, isSelf) {
      
-   let person;
+   let pronoun;
+   let greet;
    if(isSelf == true)
    {
-       person = ' my'
+      pronoun = prefixes[0];
+       greet = greetingWords[0];
    }
    else
    {
       if (gender == 'male')
       {
-         person = ' his'
+         pronoun = prefixes[1];
+         greet = greetingWords[1];
       }
       else if(gender == 'female')
       {
-         person =  ' her'
+         pronoun =  prefixes[2];
+         greet = greetingWords[1];
       }
       else
       {
-         person = ' their'
+         pronoun = prefixes[3];
+         greet = greetingWords[2];
       }
    }
-    return  `Hi,` + person + ` name is ` + name; // use template literal for string to return
+    return  `${greet} ${pronoun} name is ${name}` ; // use template literal for string to return
   }
   
   let message;
