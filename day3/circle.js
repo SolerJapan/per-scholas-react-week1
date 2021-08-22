@@ -11,7 +11,7 @@
 var pi = 3.14159;
 var area;
 function getArea(radius) {
-    return pi * (radius * radius);
+    return pi * (radius ^ 2);
 }
 function getDiameter(radius) {
     return radius * 2;
@@ -19,6 +19,6 @@ function getDiameter(radius) {
 function getCircumfrence(radius) {
     return pi * (radius * 2);
 }
-console.log("Area" + getArea(3));
-console.log("Diameter" + getDiameter(3));
-console.log("Circumference" + getCircumfrence(3));
+console.log("Area " + getArea(3));
+console.log("Diameter " + getDiameter(3));
+console.log("Circumference " + getCircumfrence(3));

@@ -14,3 +14,5 @@ function sunnyDayMessage(isSunny: boolean, numberSunnyDays: number): string {
 }
 ​
 console.log(sunnyDayMessage(true, 5));
+console.log(sunnyDayMessage(false, 5));
+console.log(sunnyDayMessage(true, 12));
